@@ -65,3 +65,33 @@
   width: 50%;
   font-weight: bold;
 }
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .hero {
+    height: calc(100vh - 80px);
+  }
+
+  .hero .wrapper .textContainer h2 {
+    font-size: 24px;
+  }
+
+  .hero .wrapper .textContainer h1 {
+    font-size: 60px;
+  }
+
+  .hero .wrapper .textContainer .buttons button {
+    padding: 15px;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .hero .wrapper .textContainer img {
+    width: 30px;
+  }
+
+  .hero .slidingTextContainer {
+    font-size: 30vh;
+    bottom: -60px;
+  }
+}

@@ -22,94 +22,57 @@
   padding: 0;
 }
 
+/* Adjustments for container and wrapper */
 .portfolio .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  height: 100%;
   overflow: hidden;
 }
 
 .portfolio .container .wrapper {
   max-width: 1366px;
-  height: 100%;
   margin: auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center items horizontally */
   gap: 50px;
 }
 
 .portfolio .container .wrapper .imageContainer {
-  flex: 1;
-  height: 50%;
+  flex: 1 1 50%; /* Each item takes 50% width on large screens */
+  max-width: 50%; /* Each item takes 50% width on large screens */
 }
 
 .portfolio .container .wrapper .imageContainer img {
   width: 100%;
-  height: 100%;
+  height: auto; /* Maintain aspect ratio */
   object-fit: cover;
 }
 
 .portfolio .container .wrapper .textContainer {
-  flex: 1;
+  flex: 1 1 50%; /* Each item takes 50% width on large screens */
+  max-width: 50%; /* Each item takes 50% width on large screens */
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
 .portfolio .container .wrapper .textContainer h2 {
-  font-size: 72px;
+  font-size: 36px; /* Decrease font size for headings */
 }
 
 .portfolio .container .wrapper .textContainer p {
-  color: gray;
-  font-size: 24px;
+  font-size: 16px; /* Decrease font size for paragraphs */
 }
 
 .portfolio .container .wrapper .textContainer button {
-  background-color: #f5dd61;
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
-  width: 200px;
-  cursor: pointer;
+  width: 100%; /* Make button full width */
 }
 
+/* Media query adjustments for smaller screens */
 @media screen and (max-width: 768px) {
-  .portfolio {
-    padding-top: 100px; /* Add top padding to create space for the fixed navigation */
-  }
-
-  .wrapper {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: center; /* Center items horizontally */
-  }
-
-  .wrapper .container {
-    flex-direction: column; /* Stack items vertically */
-    gap: 20px; /* Add space between items */
-  }
-
-  .wrapper .container .imageContainer {
-    width: 100%; /* Make image container full width */
-    max-height: 300px; /* Limit image height */
-  }
-
-  .wrapper .container .textContainer {
-    width: 100%; /* Make text container full width */
-  }
-
-  .wrapper .container .textContainer h2 {
-    font-size: 36px; /* Decrease font size for headings */
-  }
-
-  .wrapper .container .textContainer p {
-    font-size: 16px; /* Decrease font size for paragraphs */
-  }
-
-  .wrapper .container .textContainer button {
-    width: 100%; /* Make button full width */
+  .portfolio .container .wrapper .imageContainer,
+  .portfolio .container .wrapper .textContainer {
+    flex: 1 1 100%; /* Each item takes 100% width on smaller screens */
+    max-width: 100%; /* Each item takes 100% width on smaller screens */
   }
 }
