@@ -14,7 +14,6 @@ const textVariants = {
       staggerChildren: 0.1,
     },
   },
-
   scrollButton: {
     opacity: 0,
     y: 10,
@@ -55,7 +54,7 @@ const Hero = () => {
             <motion.button variants={textVariants}>
               See my latest Projects
             </motion.button>
-            <motion.button variants={textVariants}>Get in touch</motion.button>
+            <motion.button variants={textVariants}>Scroll down</motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}

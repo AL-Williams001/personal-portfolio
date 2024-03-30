@@ -1,5 +1,5 @@
 .textContainer {
-  padding-right: 20px; /* Add padding to the right */
+  padding-right: 20px;
   margin: 20px;
 }
 
@@ -17,11 +17,11 @@
   border: 1px solid white;
   color: white;
   border-radius: 5px;
-  width: 100%; /* Make input fields and textarea stretch to full width */
+  width: 100%;
 }
 
 .contact .formContainer form textarea {
-  height: 200px; /* Adjust the height of the textarea as needed */
+  height: 200px;
 }
 
 .contact .formContainer form button {
@@ -30,4 +30,16 @@
   background-color: #38e54d;
   cursor: pointer;
   font-weight: 500;
+}
+
+.contact .textContainer .resumeButton {
+  padding: 20px;
+  border: 1px solid #40a2e3;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #40a2e3;
+  cursor: pointer;
+  margin-right: 20px;
+  font-weight: 500;
+  margin-top: 20px;
 }

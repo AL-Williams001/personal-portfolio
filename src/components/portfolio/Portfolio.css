@@ -22,7 +22,6 @@
   padding: 0;
 }
 
-/* Adjustments for container and wrapper */
 .portfolio .container {
   width: 100%;
   overflow: hidden;
@@ -32,47 +31,47 @@
   max-width: 1366px;
   margin: auto;
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap */
-  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 50px;
 }
 
 .portfolio .container .wrapper .imageContainer {
-  flex: 1 1 50%; /* Each item takes 50% width on large screens */
-  max-width: 50%; /* Each item takes 50% width on large screens */
+  flex: 1 1 50%;
+  max-width: 50%;
 }
 
 .portfolio .container .wrapper .imageContainer img {
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
+  height: auto;
   object-fit: cover;
 }
 
 .portfolio .container .wrapper .textContainer {
-  flex: 1 1 50%; /* Each item takes 50% width on large screens */
-  max-width: 50%; /* Each item takes 50% width on large screens */
+  flex: 1 1 50%;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
 .portfolio .container .wrapper .textContainer h2 {
-  font-size: 36px; /* Decrease font size for headings */
+  font-size: 36px;
 }
 
 .portfolio .container .wrapper .textContainer p {
-  font-size: 16px; /* Decrease font size for paragraphs */
+  font-size: 16px;
 }
 
 .portfolio .container .wrapper .textContainer button {
-  width: 100%; /* Make button full width */
+  width: 100%;
+  cursor: pointer; /* Add pointer cursor */
 }
 
-/* Media query adjustments for smaller screens */
 @media screen and (max-width: 768px) {
   .portfolio .container .wrapper .imageContainer,
   .portfolio .container .wrapper .textContainer {
-    flex: 1 1 100%; /* Each item takes 100% width on smaller screens */
-    max-width: 100%; /* Each item takes 100% width on smaller screens */
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
