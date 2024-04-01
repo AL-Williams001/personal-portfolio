@@ -41,11 +41,6 @@ const Contact = () => {
       );
   };
 
-  const handleDownloadResume = () => {
-    const resumeFilePath = "/arthur-williams.pdf"; // Adjust the file name as needed
-    window.open(resumeFilePath, "_blank");
-  };
-
   return (
     <motion.div
       className="contact"
@@ -63,13 +58,6 @@ const Contact = () => {
           <h2>Phone:</h2>
           <span>+63 945 3163 943</span>
         </motion.div>
-        <motion.button
-          onClick={handleDownloadResume}
-          variants={variants}
-          className="resumeButton"
-        >
-          Download Resume
-        </motion.button>
       </motion.div>
       <div className="formContainer">
         <form ref={formRef} onSubmit={sendEmail}>

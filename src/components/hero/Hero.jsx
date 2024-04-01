@@ -14,14 +14,6 @@ const textVariants = {
       staggerChildren: 0.1,
     },
   },
-  scrollButton: {
-    opacity: 0,
-    y: 10,
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-    },
-  },
 };
 
 const sliderVariants = {
@@ -38,7 +30,19 @@ const sliderVariants = {
   },
 };
 
+const scrollToPortfolio = () => {
+  const portfolioSection = document.getElementById("portfolio");
+  if (portfolioSection) {
+    portfolioSection.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 const Hero = () => {
+  const handleDownloadResume = () => {
+    const resumeFilePath = "/arthur-williams.pdf"; // Adjust the file name as needed
+    window.open(resumeFilePath, "_blank");
+  };
+
   return (
     <div className="hero">
       <div className="wrapper">
@@ -51,18 +55,19 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>Arthur Lynn Williams</motion.h2>
           <motion.h1 variants={textVariants}>Full Stack Developer</motion.h1>
           <motion.div className="buttons">
-            <motion.button variants={textVariants}>
+            <motion.button variants={textVariants} onClick={scrollToPortfolio}>
               See my latest Projects
             </motion.button>
-            <motion.button variants={textVariants}>Scroll down</motion.button>
+            <motion.button
+              variants={textVariants}
+              onClick={handleDownloadResume}
+            >
+              Download Resume
+            </motion.button>
           </motion.div>
-          <motion.img
-            variants={textVariants}
-            animate="scrollButton"
-            src="../scroll.png"
-          />
         </motion.div>
       </div>
+
       <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}

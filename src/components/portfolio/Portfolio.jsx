@@ -75,8 +75,15 @@ const Portfolio = () => {
     damping: 30,
   });
 
+  const scrollToPortfolio = () => {
+    const portfolioSection = document.getElementById("portfolio");
+    if (portfolioSection) {
+      portfolioSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="portfolio" ref={ref}>
+    <div className="portfolio" ref={ref} id="portfolio">
       <div className="progress">
         <h1>Featured Works</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>

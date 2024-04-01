@@ -33,18 +33,6 @@
   font-weight: 500;
 }
 
-.contact .textContainer .resumeButton {
-  padding: 20px;
-  border: 1px solid #40a2e3;
-  border-radius: 10px;
-  background-color: transparent;
-  color: #40a2e3;
-  cursor: pointer;
-  margin-right: 20px;
-  font-weight: 500;
-  margin-top: 20px;
-}
-
 h2 {
   font-size: 32px;
 }
