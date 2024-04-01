@@ -56,11 +56,11 @@ const Contact = () => {
       <motion.div className="textContainer" variants={variants}>
         <motion.h1 variants={variants}>Get in touch</motion.h1>
         <motion.div variants={variants} className="item">
-          <h2>Email</h2>
+          <h2>Email:</h2>
           <span>arthurlynnwilliams01@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
+          <h2>Phone:</h2>
           <span>+63 945 3163 943</span>
         </motion.div>
         <motion.button
