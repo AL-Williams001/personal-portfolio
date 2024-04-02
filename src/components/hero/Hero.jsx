@@ -25,7 +25,7 @@ const sliderVariants = {
     transition: {
       repeat: Infinity,
       repeatType: "mirror",
-      duration: 20,
+      duration: 40,
     },
   },
 };
@@ -76,9 +76,6 @@ const Hero = () => {
       >
         WEB DEVELOPER
       </motion.div>
-      <div className="imageContainer">
-        <img src="../hero.png" />
-      </div>
     </div>
   );
 };

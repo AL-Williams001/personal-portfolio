@@ -19,17 +19,24 @@
   max-width: 50%;
 }
 
-.hero .wrapper .textContainer h2 {
-  font-size: 35px;
-  color: #bbe2ec;
-  letter-spacing: 10px;
-  margin-bottom: 20px;
-  padding: auto;
-}
+/* PC and Tablet Styles */
+@media screen and (min-width: 769px) {
+  .hero .wrapper .textContainer {
+    text-align: center; /* Center text horizontally */
+  }
 
-.hero .wrapper .textContainer h1 {
-  font-size: 100px;
-  margin-bottom: 20px;
+  .hero .wrapper .textContainer h2 {
+    font-size: 35px;
+    color: #bbe2ec;
+    letter-spacing: 10px;
+    margin: 0 auto 20px; /* Center text horizontally and add bottom margin */
+    padding: auto;
+  }
+
+  .hero .wrapper .textContainer h1 {
+    font-size: 100px;
+    margin: 0 auto 20px; /* Center text horizontally and add bottom margin */
+  }
 }
 
 .hero .wrapper .textContainer .buttons button {
@@ -42,58 +49,44 @@
   cursor: pointer;
 }
 
-.hero .wrapper .textContainer img {
-  width: 50px;
-}
-
-.hero .imageContainer {
-  max-width: 50%;
-  position: relative;
-}
-
-.hero .imageContainer img {
-  width: 100%;
-  height: 450px;
-  object-fit: contain;
-  padding-left: 50px;
-}
-
 /* Adjust image position for screens with a minimum width of 900px */
 @media screen and (min-width: 900px) {
-  .hero .imageContainer {
-    /* Keep position relative */
-    position: relative;
-    width: auto;
-    max-width: 50%;
-    margin-left: 700px;
+  .hero .wrapper .textContainer {
+    margin-left: 330px;
+    text-align: center; /* Center text horizontally */
   }
 
-  .hero .imageContainer img {
-    /* Adjust image alignment */
-    position: flex;
-    top: 50%;
-    transform: translateY(-68%);
-    right: 0;
-    height: 650px;
-    padding-left: 500px;
-    padding-bottom: 100px;
+  .hero .wrapper .textContainer h2 {
+    font-size: 50px;
+    color: #bbe2ec;
+    letter-spacing: 10px;
+    margin: 0 auto 20px; /* Center text horizontally and add bottom margin */
+    padding: auto;
+  }
+
+  .hero .wrapper .textContainer h1 {
+    font-size: 130px;
+    margin: 0 auto 20px; /* Center text horizontally and add bottom margin */
   }
 }
 
 /* Mobile Responsive Styles */
 @media screen and (max-width: 768px) {
-  .hero .wrapper {
-    flex-direction: column;
-    text-align: center;
+  .hero .wrapper .textContainer {
+    text-align: center; /* Center text horizontally */
   }
 
-  .hero .wrapper .textContainer,
-  .hero .imageContainer {
-    max-width: 100%;
+  .hero .wrapper .textContainer h2 {
+    font-size: 35px;
+    color: #bbe2ec;
+    letter-spacing: 10px;
+    margin: 0 auto 20px; /* Center text horizontally and add bottom margin */
+    padding: auto;
   }
 
   .hero .wrapper .textContainer h1 {
-    font-size: 60px;
+    font-size: 100px;
+    margin: 0 auto 20px; /* Center text horizontally and add bottom margin */
   }
 
   .hero .wrapper .textContainer .buttons button {
@@ -101,14 +94,6 @@
     font-size: 14px;
     margin: 10px auto;
     display: block;
-  }
-
-  .hero .imageContainer img {
-    /* Adjust positioning */
-    /* position: flex; */
-    /* align-items: end; */
-    width: auto;
-    max-width: 100%;
   }
 }
 
@@ -118,5 +103,5 @@
   font-size: 50vh;
   bottom: -120px;
   white-space: nowrap;
-  color: #ffffff09;
+  color: #bbe2ec;
 }
