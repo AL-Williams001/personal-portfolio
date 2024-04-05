@@ -26,7 +26,7 @@
   }
 
   .hero .wrapper .textContainer h2 {
-    font-size: 35px;
+    font-size: 30px;
     color: #bbe2ec;
     letter-spacing: 10px;
     margin: 0 auto 20px; /* Center text horizontally and add bottom margin */
@@ -77,16 +77,22 @@
   }
 
   .hero .wrapper .textContainer h2 {
-    font-size: 35px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
     color: #bbe2ec;
     letter-spacing: 10px;
-    margin: 0 auto 20px; /* Center text horizontally and add bottom margin */
+    margin-left: 150px; /* Center text horizontally and add bottom margin */
     padding: auto;
   }
 
   .hero .wrapper .textContainer h1 {
-    font-size: 100px;
-    margin: 0 auto 20px; /* Center text horizontally and add bottom margin */
+    font-size: 70px;
+    margin-left: 150px;
+    align-items: center;
+    justify-content: center;
+    display: flex; /* Center text horizontally and add bottom margin */
   }
 
   .hero .wrapper .textContainer .buttons button {
@@ -103,5 +109,5 @@
   font-size: 50vh;
   bottom: -120px;
   white-space: nowrap;
-  color: #bbe2ec;
+  color: #ffffff09;
 }

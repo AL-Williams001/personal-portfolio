@@ -66,6 +66,9 @@
 .portfolio .container .wrapper .textContainer button {
   width: 100%;
   cursor: pointer; /* Add pointer cursor */
+  background-color: #38e54d;
+  border-radius: 10px;
+  font-size: 50px;
 }
 
 @media screen and (max-width: 768px) {
