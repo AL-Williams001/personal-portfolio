@@ -17,18 +17,6 @@ const items = [
     demoUrl: "https://calculator-app-three-tau.vercel.app/",
     desc: "A Calculator app made from vanila JS. Please click See demo for the full site",
   },
-  {
-    id: 3,
-    title: "Weather APP",
-    img: "https://placekitten.com/640/360",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
-  },
-  {
-    id: 4,
-    title: "Random Quote Generator APP",
-    img: "./random-quotes-app.jpg",
-    desc: "This app is an API which generates random quotes made from REACT. Please click see demo for the full site",
-  },
 ];
 
 const Single = ({ item }) => {
