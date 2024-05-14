@@ -21,7 +21,7 @@ const items = [
     id: 3,
     title: "Admin Dashboard APP",
     img: "./dashboardapp.jpg",
-    demoUrl: "https://admin-frontend-x70a.onrender.com",
+    demoUrl: "https://admin-frontend-x70a.onrender.com/dashboard",
     desc: "A Fullstack Application with React, Node.js, Express, and MongoDB. It may take some time to load since it is deployed in Render",
   },
 ];
