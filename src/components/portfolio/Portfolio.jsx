@@ -24,6 +24,13 @@ const items = [
     demoUrl: "https://admin-frontend-x70a.onrender.com/dashboard",
     desc: "A Fullstack Application with React, Node.js, Express, and MongoDB. It may take some time to load since it is deployed in Render",
   },
+  {
+    id: 4,
+    title: "Auth APP",
+    img: "./auth-app.jpg",
+    demoUrl: "https://auth-app-ojcd.onrender.com",
+    desc: "A Full-stack Authentication Application with React, Node.js, Express, Firebase, and MongoDB, utilizing CRUD functionality and can create an account via Google. Due to its deployment on Render, it may experience longer loading times.",
+  },
 ];
 
 const Single = ({ item }) => {
