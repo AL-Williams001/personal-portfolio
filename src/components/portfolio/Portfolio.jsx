@@ -31,6 +31,13 @@ const items = [
     demoUrl: "https://auth-app-ojcd.onrender.com",
     desc: "A Full-stack Authentication Application with React, Node.js, Express, Firebase, and MongoDB, utilizing CRUD functionality and can create an account via Google. Due to its deployment on Render, it may experience longer loading times.",
   },
+  {
+    id: 5,
+    title: "Real Estate Marketplace APP",
+    img: "./real-estate.jpg",
+    demoUrl: "https://real-estate-tk35.onrender.com",
+    desc: "Real Estate Marketplace APP is a comprehensive real estate marketplace built with cutting-edge technologies like React, Tailwind, Firebase, and MongoDB. It empowers both property seekers and owners with a user-friendly platform to navigate the real estate market seamlessly.",
+  },
 ];
 
 const Single = ({ item }) => {
